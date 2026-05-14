@@ -11,8 +11,9 @@ def load_movielens_100k(data_path=DATA_PATH):
     ratings_path = os.path.join(data_path, 'ratings.csv')
 
     print('Loading dataset from CSV files...')
-    movies  = pd.read_csv(movies_path)
-    ratings = pd.read_csv(ratings_path)
+    movies = pd.read_csv("data/movies.csv")
+ratings = pd.read_csv("data/ratings.csv")
+
     return ratings, movies
 
 
